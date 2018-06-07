@@ -53,17 +53,6 @@ end
 page '/blog/feed.xml'
 
 ###
-## Disqus settings
-###
-configure :development do
-  activate :disqus do |d|
-    # Set Disqus short name for local development. Read the following for more info:
-    # https://github.com/simonrice/middleman-disqus#important-do-not-use-real-shortnames-during-development
-    d.shortname = SecureRandom.uuid # replace with your short name for dev
-  end
-end
-
-###
 ## Google Analytics settings
 ###
 activate :google_analytics do |ga|
@@ -110,11 +99,4 @@ activate :syntax
 configure :build do
   activate :minify_css
   activate :minify_javascript
-
-  # Set production settings for Disqus
-  activate :disqus do |d|
-    # Set Disqus short name for production. Read the following for more info:
-    # https://github.com/simonrice/middleman-disqus#important-do-not-use-real-shortnames-during-development
-    d.shortname = nil # replace with your short name for prod
-  end
 end
