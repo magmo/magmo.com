@@ -1,5 +1,5 @@
-@import "bootstrap";
 @import "variables.scss";
+@import "bootstrap";
 @import "mixins.scss";
 @import "global.scss";
 @import "navbar.scss";
@@ -9,4 +9,5 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "github-highlighter";
+
 @import "bootstrap-overrides.scss";
