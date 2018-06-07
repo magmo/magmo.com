@@ -7,6 +7,7 @@ gem 'middleman-autoprefixer', '~> 2.7'
 # gem 'middleman-disqus', '~> 1.2.0'
 gem 'middleman-google-analytics', '~> 3.0.0'
 gem 'middleman-syntax', '~> 3.0.0'
+gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
 gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'rails-assets-jquery', source: 'https://rails-assets.org'
