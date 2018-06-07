@@ -1,0 +1,29 @@
+<div class="row">
+  <article class="col-sm-12 col-lg-9">
+    <h3><%= article.title %></h3>
+    <%= article.body %>
+
+    <% if article.article_previous || article.article_next %>
+      <ul class="read_next">
+        <li>
+          <% if article.article_previous %>
+            <%= link_to("<i class='fa fa-caret-left'></i> #{article.article_previous.title}", article.article_previous) %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </li>
+        <li>
+          <% if article.article_next %>
+            <%= link_to("#{article.article_next.title} <i class='fa fa-caret-right'></i>", article.article_next) %>
+          <% else %>
+            &nbsp;
+          <% end %>
+        </li>
+      </ul>
+    <% end %>
+    
+    <%= disqus %>
+  </article>
+
+  <%= partial '/blog/article_sidebar', locals: { article: article } %>
+</div>
