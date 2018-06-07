@@ -51,6 +51,7 @@ end
 
 # Setup blog feed
 page '/blog/feed.xml'
+page '/index.html', layout: false
 
 ###
 ## Google Analytics settings

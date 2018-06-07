@@ -1,6 +1,12 @@
-@import "bootstrap_overrides";
 @import "bootstrap";
+@import "variables.scss";
+@import "mixins.scss";
+@import "global.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "services.scss";
+@import "portfolio.scss";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import "base";
 @import "github-highlighter";
+@import "bootstrap-overrides.scss";
