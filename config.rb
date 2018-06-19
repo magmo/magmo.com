@@ -91,7 +91,7 @@ activate :google_analytics do |ga|
   # ga.disable = false
 
   # Testing your implementation without sending hits (default = true) in development
-  ga.test = true
+  ga.test = false
 
   # Compress the JavaScript code (default = false)
   # ga.minify = false
