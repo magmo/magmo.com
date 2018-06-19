@@ -67,7 +67,7 @@ end
 ## Google Analytics settings
 ###
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X' # Replace with your property ID.
+  ga.tracking_id = 'UA-121043420-1' # Replace with your property ID.
 
   # Removing the last octet of the IP address (default = false)
   # ga.anonymize_ip = false
@@ -110,4 +110,5 @@ activate :syntax
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :asset_hash
 end
