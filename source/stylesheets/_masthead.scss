@@ -2,10 +2,12 @@
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  // background-image: url('../img/header.jpg');
+  /* Background pattern from Toptal Subtle Patterns */
+  background-image: url('../images/header.png');
+  background-repeat: repeat;
   // background-position: center center;
   background-color: $gray-100;
-  @include background-cover;
+  // @include background-cover;
   hr {
     margin-top: 30px;
     margin-bottom: 30px;

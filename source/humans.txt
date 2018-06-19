@@ -16,3 +16,4 @@
 
     CSS3, HTML5
     Bootstrap, jQuery, Font Awesome, HTML5 Boilerplate
+    Background pattern from Toptal Subtle Patterns
