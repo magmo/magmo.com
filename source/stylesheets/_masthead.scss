@@ -3,10 +3,12 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   /* Background pattern from Toptal Subtle Patterns */
-  background-image: url('../images/header.png');
-  background-repeat: repeat;
-  // background-position: center center;
+  /* background-image: url('../images/header.png'); */
+  background-image: url('../images/bg.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
   background-color: $gray-100;
+  background-size: contain;
   // @include background-cover;
   hr {
     margin-top: 30px;
