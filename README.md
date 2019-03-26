@@ -21,5 +21,14 @@ bundle exec middleman article "My article name"
 
 ```
 bundle exec middleman deploy
+
+```
+
+# Ghost
+
+```
+cd ghost
+npm install ghost-cli -g
+ghost start
 ```
 
