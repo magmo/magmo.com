@@ -2,6 +2,8 @@
 
 title: mermaid_test
 date: 2019-04-01 04:23 PDT
+published: false
+author: George Knee
 tags: 
 
 ---

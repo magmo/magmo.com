@@ -1,3 +1,11 @@
 <% wrap_layout :layout do %>
-  <%= partial '/blog/article', locals: { article: current_article } %>
+  <section id="blog"">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mx-auto">
+          <%= partial '/blog/article', locals: { article: current_article } %>
+      </div>
+    </div>
+  </div>
+</section>
 <% end %>
