@@ -54,7 +54,6 @@ end
 
 # Setup blog feed
 page '/blog/feed.xml'
-page '/index.html', layout: false
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
