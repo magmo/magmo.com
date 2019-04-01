@@ -9,8 +9,6 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-page '/index2.html', layout: false
-page '/index3.html', layout: false
 ###
 ## Asset settings
 ###
