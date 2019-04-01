@@ -1,3 +1,4 @@
+//= require mermaid
 //= require jquery
 //= require scrollreveal.min.js
 //= require jquery.easing.min.js

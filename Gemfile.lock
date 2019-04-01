@@ -133,6 +133,7 @@ GEM
     rack-livereload (0.3.17)
       rack
     rails-assets-jquery (3.3.1)
+    rails-assets-mermaid (7.0.0)
     rails-assets-modernizr (3.6.0)
     rails-assets-popper.js (1.14.1)
     rb-fsevent (0.10.3)
@@ -174,6 +175,7 @@ DEPENDENCIES
   middleman-syntax (~> 3.0.0)
   nokogiri (~> 1.8.1)
   rails-assets-jquery!
+  rails-assets-mermaid!
   rails-assets-modernizr!
   rails-assets-popper.js!
   tzinfo-data
