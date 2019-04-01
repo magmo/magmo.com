@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,7 +9,6 @@
     <link type="text/plain" rel="author" href="/humans.txt" />
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-
 
     <title>magmo</title>
 
@@ -27,6 +26,7 @@
 
     <%= yield_content :head %>
   </head>
+
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -63,54 +63,37 @@
           </ul>
         </div>
     </nav>
-      <!-- End Header and Nav -->
+    <!-- End Header and Nav -->
+      
+    <!-- Social Navigation -->
+    <nav class="social_navigation">
+      <ul>
+        <li class="twitter">
+          <a href="https://twitter.com/magmoHQ">
+          <i class="fab fa-twitter fa-6x"></i>
+          </a>
+        </li>
+        <li class="discord">
+          <a href="https://discord.gg/UDQMgVa">
+          <i class="fab fa-discord fa-6x"></i>
+          </a>
+        </li>
+        <li class="github">
+          <a href="https://github.com/magmo">
+          <i class="fab fa-github fa-6x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  <!-- End Social Navigation -->
 
-      <!-- Main page container -->
-      <%= yield %>
+  <!-- Main page container -->
+  <%= yield %>
 
-      <!--[if lt IE 10]>
-      <div id="ie-warning-overlay">
-        <div id="ie-warning">
-          <h1>Did you know that your copy of Internet Explorer is very outdated and not secure?</h1>
-          <p>
-              To get the best possible experience using our website, we recommend that you upgrade to the latest version or use
-              another web browser. Any of the following will provide a superior experience, and higher security, not only on this
-              site, but across the web.
-          </p>
-          <p>Just click one of the icons below to get to the download page.</p>
-          <ul>
-            <li>
-              <a href="http://microsoft.com/ie">
-                <%= image_tag 'browser_ie.gif', alt: 'Download Internet Explorer' %>
-                <p>Internet Explorer 10+</p>
-              </a>
-            </li>
-            <li>
-              <a href="http://mozilla.org/firefox">
-                <%= image_tag 'browser_firefox.gif', alt: 'Download Firefox' %>
-                <p>Firefox</p>
-              </a>
-            </li>
-            <li>
-              <a href="http://google.com/chrome">
-                <%= image_tag 'browser_chrome.gif', alt: 'Download Chrome' %>
-                <p>Google Chrome</p>
-              </a>
-            </li>
-            <li>
-              <a href="http://apple.com/safari">
-                <%= image_tag 'browser_safari.gif', alt: 'Download Safari' %>
-                <p>Safari</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <![endif]-->
-    </div>
 
     <!-- Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.3.0/mermaid.full.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/0.3.0/mermaid.full.min.js"></script>
     <%= javascript_include_tag 'modernizr-3.5.0.min' %>
     <%= javascript_include_tag 'application' %>
     <%= yield_content :javascripts %>
