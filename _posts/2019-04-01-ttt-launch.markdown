@@ -15,3 +15,4 @@ If you play either of our games you will also interact with our newly improved c
 If you have any questions or feedback, please come find us in our Discord group!
 
 
+![Tic Tac Toe](/assets/ttt.png)
