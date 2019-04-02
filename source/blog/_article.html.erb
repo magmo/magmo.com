@@ -1,13 +1,14 @@
 <section id="blog"">
   <div class="container">
     <div class="row">
-      <div class="col-1">
+      <div class="col-2">
       </div>
       <div class="col-8">
       <article>
       <span><time datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%A %b %e, %Y') %></time></span></span>
       <hr>
         <h2><%= article.title %></h2>
+        <%= partial '/blog/article_meta', locals: { article: article } %>
         <br>
         <%= article.body %>
         <hr>
@@ -28,8 +29,7 @@
     </ul>
     <% end %>
       </div>
-        <div class="col-3">
-        <%= partial '/blog/article_sidebar', locals: { article: article } %>
+        <div class="col-2">
         </div>
     </div>
   </div>
