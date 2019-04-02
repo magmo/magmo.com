@@ -93,6 +93,8 @@ GEM
       addressable (~> 2.3)
       middleman-core (~> 4.0)
       tzinfo (>= 0.3.0)
+    middleman-blog-authors (0.0.1)
+      middleman-core (>= 3.1.3)
     middleman-deploy (2.0.0.pre.alpha)
       middleman-core (>= 3.2)
       net-sftp
@@ -133,7 +135,6 @@ GEM
     rack-livereload (0.3.17)
       rack
     rails-assets-jquery (3.3.1)
-    rails-assets-mermaid (7.0.0)
     rails-assets-modernizr (3.6.0)
     rails-assets-popper.js (1.14.1)
     rb-fsevent (0.10.3)
@@ -168,6 +169,7 @@ DEPENDENCIES
   middleman!
   middleman-autoprefixer (~> 2.7)
   middleman-blog (~> 4.0.2)
+  middleman-blog-authors
   middleman-deploy (~> 2.0.0.pre.alpha)
   middleman-google-analytics (~> 3.0.0)
   middleman-livereload
@@ -175,7 +177,6 @@ DEPENDENCIES
   middleman-syntax (~> 3.0.0)
   nokogiri (~> 1.8.1)
   rails-assets-jquery!
-  rails-assets-mermaid!
   rails-assets-modernizr!
   rails-assets-popper.js!
   tzinfo-data

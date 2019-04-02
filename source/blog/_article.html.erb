@@ -1,28 +1,39 @@
-<div class="row">
-  <div class="col">
-    <%= partial '/blog/article_sidebar', locals: { article: article } %>
-  </div>
-  <article class="col-6">
-    <h3><%= article.title %></h3>
-    <br>
-    <%= article.body %>
-
-    <% if article.article_previous || article.article_next %>
-      <ul class="read_next">
-          <% if article.article_previous %>
-            <%= link_to("<i class='fa fa-caret-left'></i> #{article.article_previous.title}", article.article_previous) %>
-          <% else %>
-            &nbsp;
-          <% end %>
-|
-          <% if article.article_next %>
-            <%= link_to("#{article.article_next.title} <i class='fa fa-caret-right'></i>", article.article_next) %>
-          <% else %>
-            &nbsp;
-          <% end %>
-      </ul>
+<section id="blog"">
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+      </div>
+      <div class="col-8">
+      <article>
+      <span><time datetime="<%= article.date.strftime('%Y-%m-%d') %>"><%= article.date.strftime('%A %b %e, %Y') %></time></span></span>
+      <hr>
+        <h2><%= article.title %></h2>
+        <br>
+        <%= article.body %>
+        <hr>
+      </article>
+      <% if article.article_previous || article.article_next %>
+    <ul class="read_next">
+        <% if article.article_previous %>
+          <%= link_to("<i class='fa fa-caret-left'></i> #{article.article_previous.title}", article.article_previous) %>
+        <% else %>
+          &nbsp;
+        <% end %>
+    |
+        <% if article.article_next %>
+          <%= link_to("#{article.article_next.title} <i class='fa fa-caret-right'></i>", article.article_next) %>
+        <% else %>
+          &nbsp;
+        <% end %>
+    </ul>
     <% end %>
-  </article>
-    <div class="col">
+      </div>
+        <div class="col-3">
+        <%= partial '/blog/article_sidebar', locals: { article: article } %>
+        </div>
+    </div>
   </div>
-</div>
+  <div class="container">
+    
+  </div>
+</section>

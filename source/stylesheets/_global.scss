@@ -22,12 +22,6 @@ body {
   color: $gray-900;
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-  border-color: $primary;
-}
-
 hr.light {
   border-color: $white;
 }
@@ -64,7 +58,7 @@ h6 {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 8rem 0 0 0 ;
 }
 
 .section-heading {

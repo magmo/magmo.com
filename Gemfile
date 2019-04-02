@@ -2,12 +2,14 @@ source 'https://rubygems.org'
 
 gem 'middleman', github: 'middleman/middleman', ref: '12eb9ab3a96035889027b23f5cdfea5bc2f49f9e' # to avoid sass version conflict
 gem 'middleman-blog', '~> 4.0.2'
+# gem 'middleman-blog-authors'
 gem 'middleman-sprockets', '~> 4.1.1'
 gem 'middleman-autoprefixer', '~> 2.7'
 # gem 'middleman-disqus', '~> 1.2.0'
 gem 'middleman-google-analytics', '~> 3.0.0'
 gem 'middleman-syntax', '~> 3.0.0'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
+
 
 gem 'middleman-livereload'
 

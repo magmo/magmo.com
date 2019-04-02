@@ -1,6 +1,6 @@
 ---
 
-title: mermaid_test
+title: We discovered mermaid.js
 date: 2019-04-01 04:23 PDT
 published: false
 author: George Knee
@@ -9,9 +9,9 @@ tags:
 ---
 
 
-A mermaid diagram:
+A powerful, mark-down like syntax produces diagrams that look like this:
 
-<div class="mermaid">
+<div class="mermaid text-center">
 graph TD;
     A-->B;
     A-->C;
