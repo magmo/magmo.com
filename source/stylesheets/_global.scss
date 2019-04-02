@@ -36,7 +36,8 @@ a {
   color: $primary;
   @include transition-all;
   &:hover {
-    color: darken($primary, .1);
+    // color: darken($primary, .5);
+    color: black;
   }
 }
 

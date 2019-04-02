@@ -1,17 +1,4 @@
 section#blog {
-  background-image: url('../images/bg.svg');
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-color: $gray-100;
-  background-size: contain;
-  height: 100vh;
-  min-height: 650px;
-  // padding-top: 0;
-  // padding-bottom: 0;
-  hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
 
   h1, h2, a {
     color: black !important;
@@ -20,8 +7,12 @@ section#blog {
     }
   }
 
+  h3 {
+    font-size: 42px;
+  }
+
   p {
-    font-size: 10pt;
+    font-size: 21px;
     color: black;
   }
 

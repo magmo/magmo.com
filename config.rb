@@ -107,7 +107,7 @@ end
 ###
 activate :syntax
 
-# use /anout insead of /about.html
+# use /about insead of /about.html
 activate :directory_indexes
 
 
