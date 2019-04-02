@@ -107,6 +107,10 @@ end
 ###
 activate :syntax
 
+# use /anout insead of /about.html
+activate :directory_indexes
+
+
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 configure :build do

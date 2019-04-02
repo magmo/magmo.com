@@ -1,11 +1,10 @@
 // Styling for the masthead
 section#about {
-  h1, h2, p, a {
-    color: $gray-100 !important;
-  }
-
   a {
     font-weight: bold;
   }
+}
 
+#about p {
+  font-size: 18px;
 }

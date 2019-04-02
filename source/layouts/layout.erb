@@ -27,7 +27,7 @@
     <%= yield_content :head %>
   </head>
 
-  <body id="page-top">
+  <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -40,22 +40,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./force-move-games.pdf">Paper</a>
+              <a class="nav-link js-scroll-trigger" href="/about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://rps.magmo.com">RPS</a>
+              <a class="nav-link" href="/research">Research</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://ttt.magmo.com">TTT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="https://discord.gg/UDQMgVa">Chat</a>
+              <a class="nav-link" href="/apps">Apps</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="/blog">Blog</a>
@@ -70,27 +64,27 @@
       <ul>
         <li class="twitter">
           <a href="https://twitter.com/magmoHQ">
-          <i class="fab fa-twitter fa-4x"></i>
+          <i class="fab fa-twitter fa-2x"></i>
           </a>
         </li>
         <li class="discord">
           <a href="https://discord.gg/UDQMgVa">
-          <i class="fab fa-discord fa-4x"></i>
+          <i class="fab fa-discord fa-2x"></i>
           </a>
         </li>
         <li class="github">
           <a href="https://github.com/magmo">
-          <i class="fab fa-github fa-4x"></i>
+          <i class="fab fa-github fa-2x"></i>
           </a>
         </li>
         <li class="medium">
           <a href="https://medium.com/magmo">
-          <i class="fab fa-medium fa-4x"></i>
+          <i class="fab fa-medium fa-2x"></i>
           </a>
         </li>
         <li class="email">
           <a href="mailto:research@magmo.com">
-          <i class="fab fa-envelope fa-4x"></i>
+          <i class="far fa-envelope fa-2x"></i>
           </a>
         </li>
       </ul>
@@ -100,6 +94,10 @@
   <!-- Main page container -->
   <%= yield %>
 
+<!-- Footer -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-bottom" id="footer">
+    <div class="container">
+  </nav>
 
     <!-- Javascript -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
