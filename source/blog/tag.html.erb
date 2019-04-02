@@ -1,20 +1,23 @@
 ---
 pageable: true
 ---
-<nav aria-label="breadcrumb" role="navigation">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><%= tagname %></li>
-  </ol>
-</nav>
 
 <div class="articles">
+<section id="blog"">
+  <div class="container">
+    <div class="row">
+    <div class="col-1">
+    </div>
+    <div class="col-8">
   <% page_articles.each_with_index do |article, i| %>
     <% if i > 0 %>
-      <hr />
     <% end %>
     <%= partial '/blog/article_digest', locals: { article: article } %>
   <% end %>
+      </div>
+    <div class="col-3">
+    </div>
+</div>
 </div>
 
 <%= partial '/blog/pagination', locals: {
