@@ -17,13 +17,13 @@
         <% if article.article_previous %>
           <%= link_to("<i class='fa fa-caret-left'></i> #{article.article_previous.title}", article.article_previous) %>
         <% else %>
-          &nbsp;
+          No previous article
         <% end %>
     |
         <% if article.article_next %>
           <%= link_to("#{article.article_next.title} <i class='fa fa-caret-right'></i>", article.article_next) %>
         <% else %>
-          &nbsp;
+          No subsequent article
         <% end %>
     </ul>
     <% end %>
