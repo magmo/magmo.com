@@ -1,6 +1,7 @@
 ---
 title: Introducing our second state channel app
 date: 2019-02-12
+authors: George Knee
 tags:
   - State Channels
   - Ethereum

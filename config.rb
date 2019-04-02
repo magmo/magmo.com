@@ -52,9 +52,6 @@ activate :blog do |blog|
   blog.page_link = 'p{num}'
 end
 
-# authors
-# activate :authors
-
 # Setup blog feed
 page '/blog/feed.xml'
 
