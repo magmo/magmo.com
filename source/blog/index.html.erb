@@ -14,10 +14,10 @@
 
       <% page_articles.each_with_index do |article, i| %>
       <br>
-      <span><%= article.date.strftime('%b %e') %></span>
+      <span><%= article.date.strftime('%b %e') %></span>        <%=article.data.authors.join(', ') %>
       <hr>
         <h2><%= link_to article.title, article %></h2>
-        <%=article.data.authors %>
+
         <p class="summary-text">
         <%= article.summary(250) %>
         </p>

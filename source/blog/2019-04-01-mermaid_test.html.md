@@ -3,7 +3,8 @@
 title: We discovered mermaid.js
 date: 2019-04-01 04:23 PDT
 published: false
-authors: George Knee
+authors: 
+    - George Knee
 tags: 
 - State Channels
 
