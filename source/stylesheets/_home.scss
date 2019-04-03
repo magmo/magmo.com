@@ -1,13 +1,5 @@
-// #home {
-//     background-image: linear-gradient( rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.25) ), url('../images/bg_dark.svg');
-//     background-repeat: no-repeat;
-//     background-position: right top;
-//     background-color: white;
-//     background-size: cover;
-//     background-attachment: fixed;
-// }
 section#home h2 {
- font-size: 4rem;
+ font-size: 5rem;
 }
 
 #home.p {
@@ -15,6 +7,14 @@ section#home h2 {
     font-size: 12px;
 }
 
+section#home .container{
+    height: 100%;
+}
+
+section#home div.col-lg-10.mx-auto {
+    height: 100%;
+}
 section#home {
     height: 100%;
+    padding-bottom: 128px;
 }

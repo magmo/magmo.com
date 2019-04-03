@@ -17,6 +17,7 @@
       <span><%= article.date.strftime('%b %e') %></span>
       <hr>
         <h2><%= link_to article.title, article %></h2>
+        <%=article.data.authors %>
         <p class="summary-text">
         <%= article.summary(250) %>
         </p>

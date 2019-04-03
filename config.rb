@@ -50,6 +50,7 @@ activate :blog do |blog|
   blog.paginate = true
   blog.per_page = 5
   blog.page_link = 'p{num}'
+  # blog.new_article_template = 'my_templates/my_custom_article_template.tt'
 end
 
 # Setup blog feed
