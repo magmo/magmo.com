@@ -1,0 +1,41 @@
+img.team-member {
+    opacity: 0.3;
+    width: 16%;
+    position: absolute;
+}
+
+h2#team-member-info-1 {
+    visibility: hidden;
+}
+
+img.team-member:hover {
+    opacity: 1;
+}
+
+img#team-member-1 {
+    left: 0px;
+}
+
+img#team-member-2 {
+    left: 16%;
+}
+
+img#team-member-3 {
+    left: 32%;
+}
+
+img#team-member-4 {
+    left: 48%;
+}
+
+img#team-member-5 {
+    left: 64%;
+}
+
+img#team-member-6 {
+    left: 80%;
+}
+
+.hide{
+    opacity: 0.1;
+  }
