@@ -1,0 +1,142 @@
+.team-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 0;
+
+  &__item {
+    padding: 2rem;
+
+    &__title {
+      font-size: $f-base;
+      text-align: center;
+      line-height: 1;
+    }
+
+    &__body {
+      max-width: 22rem;
+      margin: 0 auto 2rem;
+      font-size: $f-sm;
+      font-weight: 300;
+      color: $c-darkgrey;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    &__logos {
+      display: flex;
+      justify-content: space-around;
+
+      a {
+        display: block;
+        margin-bottom: 2rem;
+      }
+
+      > * {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+
+        > * {
+          display: block;
+          margin: 0 auto;
+          max-width: 12rem;
+        }
+      }
+
+      .eth {
+        padding: 1rem;
+        width: 50%;
+      }
+    }
+
+    .member-list {
+      > * {
+        padding: 0.5rem 0;
+        font-size: $f-sm;
+        color: $c-darkgrey;
+        text-align: center;
+      }
+    }
+
+    &__contributors {
+      margin: 0 auto;
+      padding: 0 1rem 1rem;
+      border-top: 1px dashed $c-lightgrey;
+
+      &__title {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      &__names {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        > * {
+          width: 30%;
+          padding: 0.5rem 0;
+          font-size: $f-sm;
+          color: $c-darkgrey;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.proto {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: $screen-md) {
+  .team-content {
+    margin-top: 2rem;
+
+    > * + * {
+      margin-top: 2rem;
+    }
+
+    &__item {
+      grid-column: span 3;
+      padding: 0;
+    }
+  }
+
+  .proto {
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+}
+
+@media screen and (max-width: $screen-tablet) {
+  .team-content {
+    margin-top: 2rem;
+
+    &__item {
+      grid-column: span 2;
+      padding: 0;
+
+      &__logos {
+        flex-direction: column;
+
+        > * {
+          width: 100%;
+        }
+
+        > * + * {
+          margin: 1rem 0;
+        }
+      }
+
+      &__contributors {
+        &__names {
+          > * {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
