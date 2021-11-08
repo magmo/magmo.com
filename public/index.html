@@ -1,138 +1,236 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3531ff">
-  <meta name="msapplication-TileColor" content="#2b5797">
-  <meta name="theme-color" content="#ffffff">
-  <meta name="description" content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions">
-  
-  <meta property="og:description" content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions">
-  <meta property="og:site_name" content="State Channels - Instant P2P Ethereum Transactions">
-  <meta property="og:title" content="State Channels - Instant P2P Ethereum Transactions">
-  <meta property="og:url" content="https://statechannels.org/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://statechannels.org/assets/symbol.png">
-  <meta property="og:image:width" content="400" />
-  <meta property="og:image:height" content="400" />
-  
-  <meta name="twitter:title" content="State Channels - Instant P2P Ethereum Transactions">
-  <meta name="twitter:description" content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="https://statechannels.org/">
-  <meta name="twitter:image" content="https://statechannels.org/assets/symbol.png">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3531ff" />
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions"
+    />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114409337-6"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta
+      property="og:description"
+      content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions"
+    />
+    <meta
+      property="og:site_name"
+      content="State Channels - Instant P2P Ethereum Transactions"
+    />
+    <meta
+      property="og:title"
+      content="State Channels - Instant P2P Ethereum Transactions"
+    />
+    <meta property="og:url" content="https://statechannels.org/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://statechannels.org/assets/symbol.png"
+    />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
 
-    gtag('config', 'UA-114409337-6');
-  </script>
+    <meta
+      name="twitter:title"
+      content="State Channels - Instant P2P Ethereum Transactions"
+    />
+    <meta
+      name="twitter:description"
+      content="State channels are a scalability technology for ethereum enabling instant & free peer-to-peer ethereum transactions"
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:url" content="https://statechannels.org/" />
+    <meta
+      name="twitter:image"
+      content="https://statechannels.org/assets/symbol.png"
+    />
 
-  <link rel="stylesheet" href="/app.css">
-  <title>State Channels - Instant P2P Ethereum Transactions</title>
-</head>
-<body>
-  <div class="wrapper">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-114409337-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!-- Navbar -->
-    <div class="section--nav">
-      <div class="container">
+      gtag("config", "UA-114409337-6");
+    </script>
 
-        <div class="nav">
-          <div class="nav__left">
-            <a href="/" alt="State Channels">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 347.74 78.18"><defs><style>.cls-1{fill:#3531FF;}.cls-2{fill:#323131;}</style></defs><title>logo</title><path class="cls-1" d="M191.71,381.41h-57a10.61,10.61,0,0,0-10.6,10.6v57a10.6,10.6,0,0,0,10.6,10.6h57a10.6,10.6,0,0,0,10.6-10.6V392A10.61,10.61,0,0,0,191.71,381.41Zm-3,26a8.69,8.69,0,0,1-2.78,1.89,52.54,52.54,0,0,1-7.64,28.48A9,9,0,1,1,162,442.21a44.93,44.93,0,0,1-11.77-8.85l-.84-.82a45.64,45.64,0,0,1-8.21-11.19,9,9,0,1,1,4.32-16.28,45.19,45.19,0,0,1,16.31-6.41l.24,0,.13,0a44.5,44.5,0,0,1,11.75-1,9,9,0,1,1,14.72,9.87Zm-45.43,1.91a4.3,4.3,0,1,0-6.08,6.08,4.26,4.26,0,0,0,1.92,1.11,4.3,4.3,0,0,0,4.16-1.11,4,4,0,0,0,.34-.38,4.3,4.3,0,0,0-.34-5.7ZM174,440.13a4.24,4.24,0,0,0-2.46-1.22,4.3,4.3,0,0,0-3.28.92l-.33.3a4.28,4.28,0,0,0-1.09,4.22A4.14,4.14,0,0,0,168,446.2a4.29,4.29,0,0,0,7.18-4.17A4.25,4.25,0,0,0,174,440.13Zm1.86-32.71a9,9,0,0,1-2.55-5.16,39.63,39.63,0,0,0-10.14,1h-.07l-.24,0-.18,0a40.58,40.58,0,0,0-14.21,5.48,9.07,9.07,0,0,1-1.91,10,8.4,8.4,0,0,1-1,.83A40.94,40.94,0,0,0,153.56,430l.09.09a40.35,40.35,0,0,0,10.12,7.71,8.64,8.64,0,0,1,.85-1,9,9,0,0,1,9.9-1.93,40.44,40.44,0,0,0,5-11.91c0-.07,0-.13.05-.18A40.52,40.52,0,0,0,181.19,410,9,9,0,0,1,175.9,407.42Zm3.35-9.43-.1.11a4.3,4.3,0,0,0,6.17,6h0a4.3,4.3,0,1,0-6.08-6.08Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M245.23,394.63c-.2-1.32-1.28-3.56-4.72-3.56-2.36,0-3.88,1.48-3.88,3,0,1.36.84,2.36,2.8,2.72l3.8.72c5.4,1,8.2,4.48,8.2,8.52,0,4.44-3.72,9-10.48,9-7.84,0-11.19-5.08-11.59-9.08l5.79-1.4c.24,2.6,2,4.88,5.88,4.88,2.48,0,4-1.2,4-3,0-1.44-1.16-2.48-3-2.84l-3.88-.72c-4.8-.92-7.72-4.12-7.72-8.32,0-5.36,4.72-9.12,10.16-9.12,7.08,0,9.76,4.24,10.36,7.56Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M271.63,392.11v22.32h-6.32V392.11h-8.72v-6h23.8v6Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M301.79,408.67h-11l-2,5.76h-6.63l10.67-28.36h7.32l10.56,28.36h-6.88Zm-8.88-5.76h6.88l-3.4-9.8Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M327.51,392.11v22.32h-6.32V392.11h-8.71v-6h23.79v6Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M343.32,414.43V386.07h17.95v6H349.63v5.4h10.56V403H349.63v5.44h11.68v6Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M229.76,441.35a14.43,14.43,0,0,1,14.63-14.84c8.52,0,12.28,5.48,13.2,9.56l-6,1.88c-.44-2-2.24-5.28-7.24-5.28-3.8,0-8.08,2.72-8.08,8.68a8,8,0,0,0,8.16,8.39,7.24,7.24,0,0,0,7.44-5.32l6,1.72c-.92,3.92-4.68,9.92-13.48,9.92C236.31,456.06,229.76,450.18,229.76,441.35Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M283.11,455.46V444.18H271.79v11.28h-6.32V427.11h6.32v11.12h11.32V427.11h6.36v28.35Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M315.75,449.7h-11l-2,5.76h-6.64l10.68-28.35h7.32l10.56,28.35h-6.88Zm-8.88-5.76h6.88l-3.4-9.79Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M349.31,455.46l-11.68-18.63v18.63h-6.28V427.11H339l10.64,17.23V427.11H356v28.35Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M383.27,455.46l-11.68-18.63v18.63h-6.28V427.11H373l10.64,17.23V427.11H390v28.35Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M399.27,455.46V427.11h18v6H405.59v5.4h10.56V444H405.59v5.44h11.68v6Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M425.79,455.46V427.11h6.32v22.31h12.24v6Z" transform="translate(-124.13 -381.41)"/><path class="cls-2" d="M465.67,435.67c-.2-1.32-1.28-3.56-4.72-3.56-2.36,0-3.88,1.48-3.88,3,0,1.36.84,2.36,2.8,2.72l3.8.72c5.4,1,8.2,4.48,8.2,8.51,0,4.44-3.72,9-10.48,9-7.84,0-11.2-5.08-11.6-9.08l5.8-1.4c.24,2.6,2,4.88,5.88,4.88,2.48,0,4-1.2,4-3,0-1.44-1.16-2.48-3-2.84l-3.88-.72c-4.8-.91-7.72-4.12-7.72-8.31,0-5.36,4.72-9.12,10.16-9.12,7.08,0,9.76,4.24,10.36,7.56Z" transform="translate(-124.13 -381.41)"/></svg>
-            </a>
+    <link rel="stylesheet" href="/app.css" />
+    <title>State Channels - Instant P2P Ethereum Transactions</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar -->
+      <div class="section--nav">
+        <div class="container">
+          <div class="nav">
+            <div class="nav__left">
+              <a href="/" alt="State Channels">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 347.74 78.18"
+                >
+                  <title>logo</title>
+                  <path
+                    d="M79.432,45.488 L69.544,45.488 C69.832,43.28 69.928,41.264 69.928,38.24 L69.928,23.456 C69.928,19.808 69.832,18.08 69.544,16.208 L79.048,16.208 L79.048,18.224 C79.048,18.416 79.048,18.416 79,18.896 L79,19.376 C81.448,16.688 84.376,15.44 88.168,15.44 C90.664,15.44 92.728,16.016 94.312,17.168 C95.176,17.792 95.656,18.368 96.28,19.568 C99.256,16.64 102.184,15.392 106.36,15.392 C113.224,15.392 116.728,19.136 116.728,26.384 L116.728,38.288 C116.728,41.264 116.824,43.232 117.112,45.488 L107.128,45.488 C107.416,43.232 107.512,41.504 107.512,38.24 L107.512,28.352 C107.512,24.752 106.456,23.36 103.72,23.36 C101.272,23.36 99.064,25.28 97.864,28.496 L97.864,38.288 C97.864,41.168 97.96,43.184 98.248,45.488 L88.264,45.488 C88.552,43.328 88.648,41.312 88.648,38.24 L88.648,28.352 C88.648,26.336 88.456,25.424 87.832,24.608 C87.304,23.84 86.344,23.408 85.192,23.408 C82.6,23.408 80.392,25.28 79.048,28.544 L79.048,38.24 C79.048,41.264 79.144,43.136 79.432,45.488 Z M141.352,26.528 L141.352,25.424 C141.352,23.12 139.96,22.064 136.792,22.064 C133.72,22.064 132.088,23.072 131.368,25.424 L122.2,23.936 C123.16,21.104 124.216,19.568 126.232,18.128 C128.824,16.304 132.376,15.392 137.032,15.392 C140.584,15.392 144.04,16.064 145.912,17.072 C148.984,18.752 150.328,21.392 150.328,25.712 L150.328,38.672 C150.328,41.6 150.424,43.328 150.664,45.488 L141.352,45.488 L141.352,43.28 C138.664,45.344 135.976,46.16 132.04,46.16 C128.392,46.16 125.656,45.296 123.736,43.52 C122.008,41.936 121.096,39.632 121.096,36.992 C121.096,33.968 122.296,31.568 124.6,29.984 C127.048,28.256 130.264,27.248 134.584,26.864 C136.456,26.672 137.896,26.624 141.352,26.528 Z M141.352,34.016 L141.352,32.672 C137.08,32.768 135.016,33.008 133.048,33.632 C131.32,34.208 130.264,35.408 130.264,36.8 C130.264,38.528 131.704,39.536 134.2,39.536 C136.168,39.536 138.328,38.816 139.624,37.712 C140.728,36.752 141.352,35.456 141.352,34.016 Z M155.272,49.232 L162.184,44.672 C163.864,46.832 166.312,47.936 169.48,47.936 C172.12,47.936 174.184,47.216 175.336,45.824 C176.344,44.672 176.776,43.232 176.872,40.688 C174.424,42.896 171.832,43.856 168.136,43.856 C159.784,43.856 154.504,38.384 154.504,29.648 C154.504,21.104 159.928,15.488 168.136,15.488 C171.688,15.488 174.28,16.304 176.872,18.272 L176.872,16.208 L186.28,16.208 C185.992,18.368 185.896,20.048 185.896,22.88 L185.896,39.728 C185.896,45.488 184.264,49.376 180.904,51.728 C178.312,53.552 174.28,54.56 169.48,54.56 C162.952,54.56 158.632,52.928 155.272,49.232 Z M163.624,29.696 C163.624,34.112 166.12,36.944 169.912,36.944 C173.848,36.944 176.68,33.92 176.68,29.648 C176.68,25.376 173.848,22.304 169.96,22.304 C166.12,22.304 163.624,25.232 163.624,29.696 Z M201.256,45.488 L191.368,45.488 C191.656,43.28 191.752,41.264 191.752,38.24 L191.752,23.456 C191.752,19.808 191.656,18.08 191.368,16.208 L200.872,16.208 L200.872,18.224 C200.872,18.416 200.872,18.416 200.824,18.896 L200.824,19.376 C203.272,16.688 206.2,15.44 209.992,15.44 C212.488,15.44 214.552,16.016 216.136,17.168 C217,17.792 217.48,18.368 218.104,19.568 C221.08,16.64 224.008,15.392 228.184,15.392 C235.048,15.392 238.552,19.136 238.552,26.384 L238.552,38.288 C238.552,41.264 238.648,43.232 238.936,45.488 L228.952,45.488 C229.24,43.232 229.336,41.504 229.336,38.24 L229.336,28.352 C229.336,24.752 228.28,23.36 225.544,23.36 C223.096,23.36 220.888,25.28 219.688,28.496 L219.688,38.288 C219.688,41.168 219.784,43.184 220.072,45.488 L210.088,45.488 C210.376,43.328 210.472,41.312 210.472,38.24 L210.472,28.352 C210.472,26.336 210.28,25.424 209.656,24.608 C209.128,23.84 208.168,23.408 207.016,23.408 C204.424,23.408 202.216,25.28 200.872,28.544 L200.872,38.24 C200.872,41.264 200.968,43.136 201.256,45.488 Z M258.472,46.592 C248.824,46.592 242.68,40.448 242.68,30.8 C242.68,21.2 248.824,15.104 258.52,15.104 C268.216,15.104 274.36,21.2 274.36,30.704 C274.36,40.256 268.024,46.592 258.472,46.592 Z M258.568,22.304 C254.344,22.304 251.848,25.472 251.848,30.752 C251.848,36.08 254.344,39.296 258.52,39.296 C262.696,39.296 265.096,36.176 265.096,30.848 C265.096,25.472 262.648,22.304 258.568,22.304 Z"
+                    id="magmo"
+                    fill="#4A4A4A"
+                  ></path>
+                  <path
+                    d="M27.6372635,59.3586667 C26.5446802,55.1268532 32.5739445,48.9471148 34.2546516,45.4095952 C23.9082985,55.6637817 14.7272084,51.0577828 7.17304815,61.3860096 C9.4570503,41.3559365 14.261503,39.0018833 17.6606445,30.0046896 C14.5131836,33.3025412 10.8525391,35.576467 4,35.0803732 C10.8261719,30.810842 14.1669922,17.4084982 18.1245087,13.3327391 C18.1314945,13.3255446 18.1384931,13.3183722 18.1455045,13.311222 L18.137565,13.3034174 C23.3703938,5.74429989 32.7472179,1.57675203 42.3502065,3.44338393 C55.3015822,5.96087634 63.7599158,18.5008716 61.2424234,31.4522472 C60.0273962,37.7030202 56.4777725,42.9072042 51.6740593,46.3359881 C39.7725838,55.281575 33.1844456,50.3344779 27.6372635,59.3586667 Z M35.5985086,37.7334732 C38.8572603,37.3012884 43.7878723,34.9616293 45.7158688,32.3909133 C46.483053,31.2978287 47.0380124,30.0293771 47.309294,28.633754 C48.3421114,23.3203691 44.8720258,18.1757557 39.558641,17.1429383 C35.9961009,16.4504507 32.5094319,17.7822382 30.2795105,20.3517355 C26.3014526,25.2902731 30.381648,30.5014347 24.9830322,39.7246762 C30.7576482,39.6978304 36.466062,33.8509684 38.9569627,31.5120763 C38.8319356,32.4788015 37.8431934,35.7972288 35.5985086,37.7334732 Z"
+                    id="Combined-Shape-Copy-3"
+                    fill="#BA4B2B"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- #if desktop -->
+            <nav class="nav__right mobile-off">
+              <a class="nav__right__item" href="/team">team.</a>
+              <a
+                class="nav__right__item"
+                target="_blank"
+                href="https://github.com/statechannels"
+                >github.</a
+              >
+              <a
+                class="nav__right__item"
+                target="_blank"
+                href="https://research.statechannels.org"
+                >forum.</a
+              >
+              <a class="nav__right__item" href="/standards">standards.</a>
+              <a
+                class="nav__right__item"
+                target="_blank"
+                href="https://blog.statechannels.org"
+                >blog.</a
+              >
+            </nav>
+            <!-- /if desktop -->
+
+            <!-- #if mobile -->
+            <div class="nav__right mobile-only menu-btn">
+              <button class="nav__right__item">menu</button>
+            </div>
+            <!-- /if mobile -->
           </div>
 
-          <!-- #if desktop -->
-          <nav class="nav__right mobile-off">
-            <a class="nav__right__item" href="/team">team.</a>
-            <a class="nav__right__item" target="_blank" href="https://github.com/statechannels">github.</a>
-            <a class="nav__right__item" target="_blank" href="https://research.statechannels.org">forum.</a>
-            <a class="nav__right__item" href="/standards">standards.</a>
-            <a class="nav__right__item" target="_blank" href="https://blog.statechannels.org">blog.</a>
-          </nav>
-          <!-- /if desktop -->
-
-          <!-- #if mobile -->
-          <div class="nav__right mobile-only menu-btn">
-            <button class="nav__right__item">menu</button>
+          <div class="mobile-menu mobile-only">
+            <button class="mobile-menu__close">close</button>
+            <a class="mobile-menu__item" href="/team">team.</a>
+            <a
+              class="mobile-menu__item"
+              target="_blank"
+              href="https://github.com/statechannels"
+              >github.</a
+            >
+            <a
+              class="mobile-menu__item"
+              target="_blank"
+              href="https://research.statechannels.org"
+              >forum.</a
+            >
+            <a class="mobile-menu__item" href="/standards">standards.</a>
+            <a
+              class="mobile-menu__item"
+              target="_blank"
+              href="https://blog.statechannels.org"
+              >blog.</a
+            >
           </div>
-          <!-- /if mobile -->
-        </div>
-
-        <div class="mobile-menu mobile-only">
-          <button class="mobile-menu__close">close</button>
-          <a class="mobile-menu__item" href="/team">team.</a>
-          <a class="mobile-menu__item" target="_blank" href="https://github.com/statechannels">github.</a>
-          <a class="mobile-menu__item" target="_blank" href="https://research.statechannels.org">forum.</a>
-          <a class="mobile-menu__item" href="/standards">standards.</a>
-          <a class="mobile-menu__item" target="_blank" href="https://blog.statechannels.org">blog.</a>
         </div>
       </div>
-    </div>
-    <!-- End Navbar -->
+      <!-- End Navbar -->
 
-    <!-- Page Content -->
-    <div class="wrapper__content">
-
-      <div class="section section--callout">
-        <div class="container">
-
-          <div class="callout">
-            <div class="callout__content">
-              <h1 class="callout__content__heading">State channels scale peer-to-peer blockchain interactions.</h1>
-              <h2 class="callout__content__subheading">Read our latest post: <a href="https://blog.statechannels.org/virtual-channels/"><b>Virtual channels: creating a state channel network</b></a></h2>
-              <div class="callout__content__buttons">
-                <a class="btn btn--stroke" target="_blank" href="https://blog.statechannels.org">the blog</a>
-                <a class="btn btn--stroke" target="_blank" href="https://docs.statechannels.org">docs</a>
-                <a class="btn btn--stroke" target="_blank" href="https://github.com/statechannels">the code</a>
+      <!-- Page Content -->
+      <div class="wrapper__content">
+        <div class="section section--callout">
+          <div class="container">
+            <div class="callout">
+              <div class="callout__content">
+                <h1 class="callout__content__heading">
+                  Bringing scalability to the decentralized web.
+                </h1>
+                <div class="callout__content__buttons">
+                  <a
+                    class="btn btn--stroke"
+                    target="_blank"
+                    href="https://blog.statechannels.org"
+                    >the blog</a
+                  >
+                  <a
+                    class="btn btn--stroke"
+                    target="_blank"
+                    href="https://docs.statechannels.org"
+                    >docs</a
+                  >
+                  <a
+                    class="btn btn--stroke"
+                    target="_blank"
+                    href="https://github.com/statechannels"
+                    >the code</a
+                  >
+                </div>
               </div>
             </div>
           </div>
-
+          <!-- <object class="callout-icon" data="./assets/shapes/cf-illustration.svg" type="image/svg+xml"></object> -->
         </div>
-        <!-- <object class="callout-icon" data="./assets/shapes/cf-illustration.svg" type="image/svg+xml"></object> -->
       </div>
+      <!-- End Page Content -->
 
-    </div>
-    <!-- End Page Content -->
+      <!-- Footer -->
+      <div class="section--footer">
+        <div class="container">
+          <footer class="footer">
+            <div class="footer__left">
+              <svg
+                class="footer__left__logo"
+                id="Capa_1"
+                data-name="Capa 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 313.59 313.59"
+              >
+                <title>iso</title>
+                <path
+                  d="M27.6372635,59.3586667 C26.5446802,55.1268532 32.5739445,48.9471148 34.2546516,45.4095952 C23.9082985,55.6637817 14.7272084,51.0577828 7.17304815,61.3860096 C9.4570503,41.3559365 14.261503,39.0018833 17.6606445,30.0046896 C14.5131836,33.3025412 10.8525391,35.576467 4,35.0803732 C10.8261719,30.810842 14.1669922,17.4084982 18.1245087,13.3327391 C18.1314945,13.3255446 18.1384931,13.3183722 18.1455045,13.311222 L18.137565,13.3034174 C23.3703938,5.74429989 32.7472179,1.57675203 42.3502065,3.44338393 C55.3015822,5.96087634 63.7599158,18.5008716 61.2424234,31.4522472 C60.0273962,37.7030202 56.4777725,42.9072042 51.6740593,46.3359881 C39.7725838,55.281575 33.1844456,50.3344779 27.6372635,59.3586667 Z M35.5985086,37.7334732 C38.8572603,37.3012884 43.7878723,34.9616293 45.7158688,32.3909133 C46.483053,31.2978287 47.0380124,30.0293771 47.309294,28.633754 C48.3421114,23.3203691 44.8720258,18.1757557 39.558641,17.1429383 C35.9961009,16.4504507 32.5094319,17.7822382 30.2795105,20.3517355 C26.3014526,25.2902731 30.381648,30.5014347 24.9830322,39.7246762 C30.7576482,39.6978304 36.466062,33.8509684 38.9569627,31.5120763 C38.8319356,32.4788015 37.8431934,35.7972288 35.5985086,37.7334732 Z"
+                  fill="#BA4B2B"
+                />
+              </svg>
+              <p class="footer__left__text">
+                Copyright © 2020 State Channels contributors
+              </p>
+            </div>
 
-    <!-- Footer -->
-    <div class="section--footer">
-      <div class="container">
-
-        <footer class="footer">
-          <div class="footer__left">
-            <svg class="footer__left__logo" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 313.59 313.59"><defs><style>.cls-1{fill:#3531FF;}</style></defs><title>iso</title><path class="cls-1" d="M217.52,376.15a17.22,17.22,0,1,0,0,24.37,15.07,15.07,0,0,0,1.35-1.53,17.27,17.27,0,0,0-1.36-22.84ZM341.05,499.68a17.25,17.25,0,0,0-23-1.22,15.53,15.53,0,0,0-1.35,1.21,17.24,17.24,0,1,0,28.8,7.65A17.08,17.08,0,0,0,341.05,499.68Zm7.46-131.2a36,36,0,0,1-10.26-20.69,159.31,159.31,0,0,0-40.66,3.84l-.3.05c-.31.07-.64.12-1,.18l-.69.13a163.38,163.38,0,0,0-57,22A36.26,36.26,0,0,1,231,414a37.53,37.53,0,0,1-3.84,3.33,163.46,163.46,0,0,0,31.77,41.61l.34.34a162.38,162.38,0,0,0,40.6,30.95,35.09,35.09,0,0,1,3.41-3.95A36.26,36.26,0,0,1,343,478.5a162.49,162.49,0,0,0,20.09-47.79c.06-.24.13-.48.21-.71a162.35,162.35,0,0,0,6.43-51.2A36.06,36.06,0,0,1,348.51,368.48Zm13.43-37.82-.41.43a17.24,17.24,0,0,0,24.75,24l.05,0a17.24,17.24,0,0,0-24.39-24.38Zm50-66.51H183.34a42.5,42.5,0,0,0-42.5,42.5V535.24a42.5,42.5,0,0,0,42.5,42.5H411.93a42.5,42.5,0,0,0,42.5-42.5V306.65A42.5,42.5,0,0,0,411.93,264.15ZM399.76,368.48a35.79,35.79,0,0,1-11.16,7.59,181.25,181.25,0,0,1-7.16,59.43A181.66,181.66,0,0,1,358,490.29,36.24,36.24,0,1,1,292.85,508a179.16,179.16,0,0,1-47.2-35.48q-1.71-1.62-3.38-3.3a182.36,182.36,0,0,1-32.91-44.9,36.23,36.23,0,1,1,17.31-65.28,181.8,181.8,0,0,1,65.44-25.73l.93-.17.54-.1a177.73,177.73,0,0,1,47.12-4.17,36.24,36.24,0,1,1,59.06,39.6Z" transform="translate(-140.84 -264.15)"/></svg>
-            <p class="footer__left__text">
-              Copyright © 2020 State Channels contributors
-            </p>
-          </div>
-
-          <div class="footer__right">
-            <p>
-              Check out our blog series! <a href="https://blog.statechannels.org/" target="_blank">blog.statechannels.org</a>
-            </p>
-          </div>
-        </footer>
+            <div class="footer__right">
+              <p>
+                Check out our blog series!
+                <a href="https://blog.statechannels.org/" target="_blank"
+                  >blog.statechannels.org</a
+                >
+              </p>
+            </div>
+          </footer>
+        </div>
       </div>
+      <!-- End Footer -->
     </div>
-    <!-- End Footer -->
-  </div>
-  <!-- End Wrapper -->
+    <!-- End Wrapper -->
 
-  <script src="/app.js" charset="utf-8"></script>
-</body>
+    <script src="/app.js" charset="utf-8"></script>
+  </body>
 </html>
