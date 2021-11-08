@@ -5,6 +5,7 @@ Website deployed at [magmo.com](https://magmo.com)!
 ## Contributing
 
 ### Setup
+Note: ruby version <2.6 and >=2.2 required
 
 1. Clone this repo
 2. Install dependencies: `bundle install`
