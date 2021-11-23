@@ -1,25 +1,17 @@
-# Magmo website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e0689e95-8ab3-4790-826d-a90652036d17/deploy-status)](https://app.netlify.com/sites/counterfactual/deploys)
 
-Website deployed at [magmo.com](https://magmo.com)!
+### Contributing
 
-## Contributing
+To install dependencies:
 
-### Setup
-
-1. Clone this repo
-2. Install dependencies: `bundle install`
-3. Run the server: `bundle exec middleman`
-4. Navigate to [http://localhost:4567](http://localhost:4567)
-
-### Creating a new article
-
-```
-bundle exec middleman article "My article name"
+```shell
+yarn
 ```
 
-### Deploying
+To serve the site locally:
 
-```
-bundle exec middleman deploy
+```shell
+yarn start
 ```
 
+and visit http://localhost:4200 (as per [ember documentation](https://cli.emberjs.com/release/basic-use/cli-commands/)).

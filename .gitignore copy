@@ -3,4 +3,3 @@ bower_components
 tmp
 dist
 .env
-app/styles/pages/standards.scss
