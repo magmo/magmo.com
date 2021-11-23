@@ -17,9 +17,11 @@
 
   &__abstract {
     @include f-base;
-    margin: 1.5rem 0 0;
+    margin: 2rem;
+    line-height: 1.45;
+    font-size:1.25rem;
     font-weight: 400;
-    color: $c-black;
+    color: #707070;
   }
 
 }

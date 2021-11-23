@@ -31,20 +31,20 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114409337-6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    gtag("config", "UA-114409337-6");
+    gtag('config', 'UA-114409337-6');
   </script>
 
-  <link rel="stylesheet" href="/app.css" />
-  <title>Magmo | Bringing scalability to the decentralized web</title>
+  <link rel="stylesheet" href="/app.css">
+
+  <title>Projects | State Channels</title>
 </head>
 
 <body>
   <div class="wrapper">
+
     <!-- Navbar -->
     <div class="section--nav">
       <div class="container">
@@ -76,31 +76,32 @@
                   <a class="nav__dropdown__papers__item">Nitro V2 (Coming Soon!)</a>
                 </li>
                 <li>
-                  <a class="nav__dropdown__papers__item" target="_blank" href="https://magmo.com/force-move-games.pdf">Force
+                  <a class="nav__dropdown__papers__item" target="_blank"
+                    href="https://magmo.com/force-move-games.pdf">Force
                     Move Games</a>
                 </li>
                 <li>
-                  <a class="nav__dropdown__papers__item" target="_blank" href="https://magmo.com/nitro-protocol.pdf">Nitro
+                  <a class="nav__dropdown__papers__item" target="_blank"
+                    href="https://magmo.com/nitro-protocol.pdf">Nitro
                     Protocol</a>
                 </li>
               </ul>
             </li>
             <a class="nav__right__item" href="/projects">projects.</a>
             <li class="nav__dropdown">
-            <a class="nav__right__item">contact.</a>
-            <ul class="nav__dropdown__list">
-              <li>
-                <a class="nav__dropdown__item" target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
-              </li>
-              <li>
-                <a class="nav__dropdown__item" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
-              </li>
+              <a class="nav__right__item">contact.</a>
+              <ul class="nav__dropdown__list">
+                <li>
+                  <a class="nav__dropdown__item" target="_blank"
+                    href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
+                </li>
+                <li>
+                  <a class="nav__dropdown__item" target="_blank"
+                    href="https://statechannels.discourse.group/">forum.</a>
+                </li>
 
-            </ul>
+              </ul>
           </nav>
-
-          <!-- forum href="https://research.statechannels.org"-->
-
           <!-- /if desktop -->
 
           <!-- #if mobile -->
@@ -113,41 +114,54 @@
         <div class="mobile-menu mobile-only">
           <button class="mobile-menu__close">close</button>
           <a class="mobile-menu__item" href="/about_us">about us.</a>
-          <a class="mobile-menu__item" href="/papers">papers.</a>
+          <a class="mobile-menu__item active" href="/papers">papers.</a>
           <a class="mobile-menu__item" href="/projects">projects.</a>
           <div class="mobile-menu__item__parent">
             contact.
           </div>
           <ul>
-          <a class="mobile-menu__item__sub" target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
-          <a class="mobile-menu__item__sub" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
+            <a class="mobile-menu__item__sub" target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
+            <a class="mobile-menu__item__sub" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
           </ul>
         </div>
       </div>
     </div>
     <!-- End Navbar -->
 
+
     <!-- Page Content -->
     <div class="wrapper__content">
-      <div class="section section--callout">
+
+      <div class="section section--statechannels">
         <div class="container">
-          <div class="callout">
-            <div class="callout__content">
-              <h1 class="callout__content__heading">
-                Bringing scalability to the decentralized web.
-              </h1>
-              <div class="callout__content__buttons">
-                <a class="btn btn--stroke" href="/about_us">about us</a>
-                <a class="btn btn--stroke" href="/projects">projects</a>
-              </div>
-            </div>
+
+          <div class="current">
+
+            <h2 class="hero__heading">Papers</h2>
+            <ul>
+              <li>
+                <a class="hero__subheading">SAFE <i>(Coming Soon!)</i></a>
+              </li>
+              <li>
+                <a class="hero__subheading">Nitro V2 <i>(Coming Soon!)</i></a>
+              </li>
+              <li>
+                <a class="hero__subheading" target="_blank" href="https://magmo.com/force-move-games.pdf"><b>Force
+                  Move Games</b></a>
+              </li>
+              <li>
+                <a class="hero__subheading" target="_blank" href="https://magmo.com/nitro-protocol.pdf"><b>Nitro
+                  Protocol</b></a>
+              </li>
+            </ul>
           </div>
+
         </div>
-        <!-- <object class="callout-icon" data="./assets/shapes/cf-illustration.svg" type="image/svg+xml"></object> -->
+
       </div>
+
     </div>
     <!-- End Page Content -->
-
     <!-- Footer -->
     <div class="section--footer">
       <div class="container">
@@ -175,10 +189,8 @@
       </div>
     </div>
     <!-- End Footer -->
-  </div>
-  <!-- End Wrapper -->
 
-  <script src="/app.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
 </body>
 
 </html>

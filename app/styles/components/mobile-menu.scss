@@ -53,6 +53,8 @@
       }
     }
 
+
+
     &:hover {
       color: $c-blue;
       transition: color $transition-speed;
@@ -62,6 +64,46 @@
         transition: background-color $transition-speed;
       }
     }
+  }
+
+  &__item__sub {
+    font-size: $f-base;
+    color: $c-lightgrey;
+    font-weight: 300;
+    padding-left: 1rem;
+
+    &.active {
+      position: relative;
+      color: $c-lightgrey;
+
+      &::before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -0.5rem;
+        width: 65%;
+        height: 1px;
+        background-color: $c-lightgrey;
+        content: '';
+      }
+    }
+    &:hover {
+      color: $c-blue;
+      transition: color $transition-speed;
+
+      &::before {
+        background-color: $c-blue;
+        transition: background-color $transition-speed;
+      }
+    }
+  }
+
+  &__item__parent {
+    font-size: $f-base;
+    color: $c-lightgrey;
+    font-weight: 300;
+    padding-left: 0;
+    list-style: none;
   }
 
   > * + * {

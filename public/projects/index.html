@@ -31,20 +31,20 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114409337-6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    gtag("config", "UA-114409337-6");
+    gtag('config', 'UA-114409337-6');
   </script>
 
-  <link rel="stylesheet" href="/app.css" />
-  <title>Magmo | Bringing scalability to the decentralized web</title>
+  <link rel="stylesheet" href="/app.css">
+
+  <title>Projects | State Channels</title>
 </head>
 
 <body>
   <div class="wrapper">
+
     <!-- Navbar -->
     <div class="section--nav">
       <div class="container">
@@ -98,9 +98,6 @@
 
             </ul>
           </nav>
-
-          <!-- forum href="https://research.statechannels.org"-->
-
           <!-- /if desktop -->
 
           <!-- #if mobile -->
@@ -114,40 +111,92 @@
           <button class="mobile-menu__close">close</button>
           <a class="mobile-menu__item" href="/about_us">about us.</a>
           <a class="mobile-menu__item" href="/papers">papers.</a>
-          <a class="mobile-menu__item" href="/projects">projects.</a>
+          <a class="mobile-menu__item active" href="/projects">projects.</a>
           <div class="mobile-menu__item__parent">
             contact.
           </div>
           <ul>
-          <a class="mobile-menu__item__sub" target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
-          <a class="mobile-menu__item__sub" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
+            <a class="mobile-menu__item__sub" target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack.</a>
+            <a class="mobile-menu__item__sub" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
           </ul>
         </div>
       </div>
     </div>
     <!-- End Navbar -->
 
+
     <!-- Page Content -->
     <div class="wrapper__content">
-      <div class="section section--callout">
+
+      <div class="section section--statechannels">
         <div class="container">
-          <div class="callout">
-            <div class="callout__content">
-              <h1 class="callout__content__heading">
-                Bringing scalability to the decentralized web.
-              </h1>
-              <div class="callout__content__buttons">
-                <a class="btn btn--stroke" href="/about_us">about us</a>
-                <a class="btn btn--stroke" href="/projects">projects</a>
-              </div>
-            </div>
+
+          <div class="current">
+
+            <h2 class="hero__heading">Current Projects</h2>
+
+            <p class="hero__body">
+              Main contributors to State Channels, an open source project in pursuit of a single standard that enable a
+              fully interoperable ecosystem of State Channel applications. Learn more at <a target="_blank"
+                href="https://www.statechannels.org/">statechannels.org</a>!
+            </p>
+            <p class="hero__body">
+              With support from Filecoin Grants, we are developing Nitro protocol in golang for use in the Filecoin
+              ecosystem. This work lays the foundation of utilizing virtual channels in the Retrieval Market. Check out
+              our <a href="https://github.com/filecoin-project/devgrants/issues/348">grant proposal</a>.
+            </p>
+            <p class="hero__body">
+              [TBD] SAFE placeholder and Nitro V2
+            </p>
+<br>
+          </div>
+
+        </div>
+        <div class="container">
+          <div class="past">
+            <h2 class="hero__heading">State Channel Applications</h3>
+
+              <p class="hero__body">
+                Here at Magmo, we are working towards our goal of building state channel networks, where users can
+                interact off-chain with security —
+                but with minimal cost and latency. To stress-test our protocols and other software, we build
+                applications that utilize them: for example, games!
+              </p>
+              <ul>
+                  <li class="hero__body__list">
+                    <a target="_blank" href="https://rps.magmo.com/">Rock Paper Scissors</a>
+                  </li>
+                  <li class="hero__body__list">
+                    <a target="_blank" href="https://ttt.magmo.com/">Tic Tac Toe</a>
+                  </li>
+              </ul>
+              <p class="hero__body">
+                For a more practical application to showcase the value of state channels, we built <a target="_blank"
+                  href="https://web3torrent.statechannels.org/">Web3Torrent</a> proof of concept application.
+                This browser based torrenting client demonstates the use of peer to peer state channel relationships,
+                high frequency messaging and the ability to incentivize filesharing using micropayments
+              </p>
+              <p class="hero__body">
+                The process of building these application, as well as feedback we get from gamers and devs, is a great
+                opportunity to learn how we could be doing things differently or better.
+              </p>
+              <br>
+              <p class="hero__subheading__right">
+                Check out our <a target="_blank" href="https://github.com/magmo">github</a> repository!
+                <br>
+                Let us know what you're building through our <a target="_blank"
+                  href="https://statechannels.discourse.group/">discourse forum</a>!
+                <br>
+                Or drop by our <a target="_blank"
+                  href="https://join.slack.com/t/statechannels/shared_invite/zt-y2hs9xde-GX8oUIWmnjo1JYDUlgST2A">slack
+                  community</a>!
+              </p>
           </div>
         </div>
-        <!-- <object class="callout-icon" data="./assets/shapes/cf-illustration.svg" type="image/svg+xml"></object> -->
       </div>
+
     </div>
     <!-- End Page Content -->
-
     <!-- Footer -->
     <div class="section--footer">
       <div class="container">
@@ -175,10 +224,8 @@
       </div>
     </div>
     <!-- End Footer -->
-  </div>
-  <!-- End Wrapper -->
 
-  <script src="/app.js" charset="utf-8"></script>
+    <script src="/app.js" charset="utf-8"></script>
 </body>
 
 </html>
