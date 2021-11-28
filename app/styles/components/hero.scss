@@ -62,10 +62,6 @@
   .hero__heading {
     margin-bottom: 1.125rem;
   }
-
-  .hero__cta {
-    margin-top: 1.25rem;
-  }
 }
 
 
@@ -73,12 +69,21 @@
   .hero {
     padding-top: 0;
   }
+}
 
-  .hero__heading {
-    margin-bottom: 1.125rem;
+
+@media screen and (max-width: $screen-mobile) {
+  .hero {
+    padding-top: 0;
   }
 
-  .hero__cta {
-    margin-top: 1.25rem;
+  .hero__body {
+    margin: 1.5rem;
+  
+  }
+
+  .hero__body__list {
+    padding-left: 2.5rem;
+  
   }
 }
