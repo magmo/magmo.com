@@ -42,13 +42,15 @@
   margin:1rem;
   font-weight: 400;
   line-height: 1;
-  color: $c-darkgrey;
   padding-left: 4rem;
+
 }
 
 .hero__cta {
-  display: block;
-  margin-top: 3.125rem;
+  color: $c-blue;
+  &:hover {
+    color: $c-blue-link;
+  }
 }
 
 

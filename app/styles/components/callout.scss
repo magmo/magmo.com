@@ -2,7 +2,11 @@
   position: relative;
   display: flex;
   flex-grow: 1;
-
+  background-image: url("/home-background.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size:contain;
   > .container {
     position: relative;
     flex-grow: 1;

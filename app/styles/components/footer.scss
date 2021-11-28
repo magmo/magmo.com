@@ -85,6 +85,46 @@
 
     &__left {
       display: flex;
+      flex-direction: row;
+      margin-bottom: 1rem;
+
+      &__text {
+        margin-top: 1rem;
+        margin-left: 0;
+        text-align: center;
+        padding-left:1rem;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column-reverse;
+      text-align: center;
+      margin-left: 0;
+
+      .twitter {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .footer-abstract--left {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: $screen-xs) {
+  .section--footer {
+    padding: 2rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 0;
+
+    &__left {
+      display: flex;
       flex-direction: column;
       margin-bottom: 1rem;
 
