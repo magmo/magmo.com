@@ -32,6 +32,25 @@
   }
 }
 
+.app__logos {
+  max-height:2rem;
+  margin:0;
+  /*
+  background: url('https://web3torrent.statechannels.org/assets/logo.svg') no-repeat;
+  background-size: contain;
+  background-position: center;
+  
+  text-align: center;
+*/
+}
+
+.header-logo-hidden {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+}
 
 @media screen and (max-width: $screen-tablet) {
   .section--lg {
@@ -39,15 +58,7 @@
   }
 }
 
-@media screen and (max-width: $screen-mobile) {
-  .section {
-    padding: 1.25rem;
 
-    &--lg {
-      padding: 2rem;
-    }
-  }
-}
 
 // Inner Container
 .list-content {
@@ -87,4 +98,17 @@
       margin: 2rem auto;
     }
   }
+}
+
+@media screen and (max-width: $screen-mobile) {
+  .section {
+    padding: 1.25rem;
+
+    &--lg {
+      padding: 2rem;
+    }
+  }
+  .app__logos {
+    max-height:1.5rem;
+}
 }
