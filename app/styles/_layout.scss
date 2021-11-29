@@ -58,15 +58,7 @@
   }
 }
 
-@media screen and (max-width: $screen-mobile) {
-  .section {
-    padding: 1.25rem;
 
-    &--lg {
-      padding: 2rem;
-    }
-  }
-}
 
 // Inner Container
 .list-content {
@@ -106,4 +98,17 @@
       margin: 2rem auto;
     }
   }
+}
+
+@media screen and (max-width: $screen-mobile) {
+  .section {
+    padding: 1.25rem;
+
+    &--lg {
+      padding: 2rem;
+    }
+  }
+  .app__logos {
+    max-height:1.5rem;
+}
 }
