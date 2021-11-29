@@ -32,18 +32,19 @@
   line-height: 1.6;
   color: $c-darkgrey;
 
-&__middle {
-  text-align: center;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
-
-  ul{
-    /* unordered list of items within a hero__body*/
-    list-style: none;
+  &__middle {
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
   }
+/*
+  &__unordered {
+
+    list-style: none;
+  }*/
+  
 }
 
 .hero__body__list {
@@ -52,7 +53,25 @@
   font-weight: 400;
   line-height: 1;
   padding-left: 4rem;
-
+  color: $c-darkgrey;
+}
+.hero__body__unordered__list {
+  @include f-base;
+  margin:1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 4rem;
+  color: $c-darkgrey;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.hero__body__list__header {
+  @include f-base;
+  margin:1rem;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 0.5rem;
+  color: $c-darkgrey;
 }
 
 .hero__cta {
