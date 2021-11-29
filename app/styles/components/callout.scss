@@ -2,9 +2,9 @@
   position: relative;
   display: flex;
   flex-grow: 1;
-  background-image: url("/home-background.svg");
+  background-image: url(home-background.svg);
   background-repeat: no-repeat;
-  background-position-x: left;
+  background-position-x: 8rem;
   background-position-y: bottom;
   background-size:contain;
   > .container {
@@ -45,6 +45,7 @@
 
     &__buttons {
       display: flex;
+      padding-left: 4rem;
 
       > * + * {
         margin-left: 1rem;
@@ -53,6 +54,11 @@
   }
 }
 
+@media screen and (max-width: $screen-1024) {
+  .section--callout {
+    background-position-x: 4rem;
+  }
+}
 
 @media screen and (max-width: $screen-tablet) {
   .section--callout {
@@ -72,8 +78,13 @@
 }
 
 @media screen and (max-width: $screen-mobile) {
+  .section--callout {
+    padding: 4rem 1rem;
+    background-position-x: left;
+  }
   .callout__content {
     &__buttons {
+      padding-left:0;
       > * {
         width: 50%;
       }
@@ -84,6 +95,7 @@
 @media screen and (max-width: $screen-xs) {
   .section--callout {
     padding: 4rem 1rem;
+    background-position-x: left;
   }
 
   .callout-icon {
