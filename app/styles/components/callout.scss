@@ -5,7 +5,7 @@
   background-image: url(home-background.svg);
   background-repeat: no-repeat;
   background-position-x: 8rem;
-  background-position-y: bottom;
+  background-position-y: 5rem;
   background-size:contain;
   > .container {
     position: relative;
@@ -63,7 +63,8 @@
 @media screen and (max-width: $screen-tablet) {
   .section--callout {
     position: relative;
-
+    background-position-y: 3rem;
+    background-position-x: left;
     > .container {
       position: relative;
     }
@@ -95,7 +96,7 @@
 @media screen and (max-width: $screen-xs) {
   .section--callout {
     padding: 4rem 1rem;
-    background-position-x: left;
+    background-position-x: right;
   }
 
   .callout-icon {
