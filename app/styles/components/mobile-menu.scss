@@ -35,7 +35,7 @@
 
   &__level1 {
     display:none;
-    margin:1.5rem 0;
+    margin:0.5rem 0;
     }
 
   &__item {
@@ -77,8 +77,7 @@
     font-size: $f-base;
     color: $c-lightgrey;
     font-weight: 300;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.25rem;
 
     &.active {
       position: relative;
@@ -129,21 +128,17 @@ toggle {
   border:none;
 }
 
+//label.toggle:hover {background-color:#FFFFFF;}
+
 [id^=drop]:checked + ul {
-  display:flex;
+  display:block;
 }
 
 toggle, [id^=drop] {
   display:none;
 }
 
- // ul ul a {
- //   padding: 0 1.5rem;
- // }
 
   li > a:after { content: ' +'; }
   li > a:only-child:after { content: ''; }
 
-dropdown-format {
-  text-align: center;
-}
