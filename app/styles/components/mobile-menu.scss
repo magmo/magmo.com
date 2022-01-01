@@ -28,14 +28,19 @@
     content: 'close';
 
     &:hover {
-      color: $c-blue;
+      color: $c-orange;
       transition: color $transition-speed;
     }
   }
 
   &__level1 {
+    //submenu section
     display:none;
-    margin:0.5rem 0;
+    padding:0.125rem;
+    border-color: $c-orange;
+    border-style: none solid solid none;
+    margin:0.125rem 0.5rem 0.5rem 0;
+
     }
 
   &__item {
@@ -59,59 +64,40 @@
         content: '';
       }
     }
-
-
-
+    
     &:hover {
-      color: $c-blue;
+      color: $c-orange-link;
       transition: color $transition-speed;
 
       &::before {
-        background-color: $c-blue;
+        background-color: $c-orange;
         transition: background-color $transition-speed;
       }
     }
-  }
 
-  &__item__sub {
-    font-size: $f-base;
-    color: $c-lightgrey;
-    font-weight: 300;
-    padding-top: 0.25rem;
-
-    &.active {
-      position: relative;
+    &__sub {
+      //submenu item
+      font-size: $f-base;
       color: $c-lightgrey;
+      font-weight: 300;
+      padding: 0.125rem;
+    
 
-      &::before {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -0.5rem;
-        width: 65%;
-        height: 1px;
-        background-color: $c-lightgrey;
-        content: '';
+      &:hover {
+        color: $c-orange-link;
+        transition: color $transition-speed;
       }
     }
-    &:hover {
-      color: $c-blue;
-      transition: color $transition-speed;
 
-      &::before {
-        background-color: $c-blue;
-        transition: background-color $transition-speed;
-      }
+    &__parent{
+      //submenu parent
+      font-size: $f-base;
+      color: $c-lightgrey;
+      font-weight: 300;
+      padding-left: 0;
+      padding-top:1.5rem;
+      list-style: none;
     }
-  }
-
-  &__item__parent {
-    font-size: $f-base;
-    color: $c-lightgrey;
-    font-weight: 300;
-    padding-left: 0;
-    padding-top:1.5rem;
-    list-style: none;
   }
 
   > * + * {
@@ -121,24 +107,21 @@
 
 
 
-toggle {
+mobile-submenu-toggle {
   display:block;
   padding: .25rem 1rem;
   text-decoration:none;
   border:none;
 }
 
-//label.toggle:hover {background-color:#FFFFFF;}
-
 [id^=drop]:checked + ul {
+  //dropdown submenu display
   display:block;
 }
 
-toggle, [id^=drop] {
+mobile-submenu-toggle, [id^=drop] {
+  //dropdown submenu hide
   display:none;
 }
 
-
-  li > a:after { content: ' +'; }
-  li > a:only-child:after { content: ''; }
 

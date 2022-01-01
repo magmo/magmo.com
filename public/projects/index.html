@@ -44,7 +44,6 @@
 
 <body>
   <div class="wrapper">
-
     <!-- Navbar -->
     <div class="section--nav">
       <div class="container">
@@ -93,7 +92,7 @@
               <ul class="nav__dropdown__list">
                 <li>
                   <a class="nav__dropdown__item" target="_blank"
-                    href="https://join.slack.com/t/statechannels/shared_invite/zt-zih4tmlg-tYwvMC2rjF0K4nHiomlkmQ">slack.</a>
+                    href="https://join.slack.com/t/statechannels/shared_invite/zt-10zhted6q-GePDJU9vKXpSiLhFtc0S0w">slack.</a>
                 </li>
                 <li>
                   <a class="nav__dropdown__item" target="_blank"
@@ -104,6 +103,7 @@
                 </li>
               </ul>
           </nav>
+
           <!-- /if desktop -->
 
           <!-- #if mobile -->
@@ -115,17 +115,36 @@
 
         <div class="mobile-menu mobile-only">
           <button class="mobile-menu__close">close</button>
-          <a class="mobile-menu__item" href="/about_us">about us.</a>
-          <a class="mobile-menu__item" href="/papers">papers.</a>
-          <a class="mobile-menu__item active" href="/projects">projects.</a>
-          <div class="mobile-menu__item__parent">
-            contact.
-          </div>
           <ul>
-            <a class="mobile-menu__item__sub" target="_blank"
-              href="https://join.slack.com/t/statechannels/shared_invite/zt-zih4tmlg-tYwvMC2rjF0K4nHiomlkmQ">slack.</a>
-            <a class="mobile-menu__item__sub" target="_blank" href="https://statechannels.discourse.group/">forum.</a>
-            <a class="mobile-menu__item__sub" target="_blank" href="mailto:research@magmo.com">email.</a>
+            <li>
+              <a class="mobile-menu__item" href="/about_us">about us.</a>
+            </li>
+            <li class = "mobile-menu__item">
+              <label for="drop-1" class="mobile-submenu-toggle">papers +</label>
+              <input type="checkbox" id="drop-1"/>
+
+              <ul class = "mobile-menu__level1">
+                <li class = "mobile-menu__item__sub">SAFE (Soon!).</li>
+                <li class = "mobile-menu__item__sub">Nitro V2 (Soon!).</li>
+                <li class = "mobile-menu__item__sub"><a href="https://magmo.com/nitro-protocol.pdf" class = "mobile-menu__item__sub">Nitro Protocol.</a></li>                
+                <li class = "mobile-menu__item__sub"><a href="https://magmo.com/force-move-games.pdf" class = "mobile-menu__item__sub">Force Move Games.</a></li>
+              </ul>
+
+            </li>
+            <li class = "mobile-menu__item">
+              <a class="mobile-menu__item" href="/projects">projects.</a>
+            </li>
+            <li class = "mobile-menu__item">
+              <label for="drop" class="mobile-submenu-toggle">contact +</label>
+              <input type="checkbox" id="drop" />
+
+              <ul class = "mobile-menu__level1">
+                <li class = "mobile-menu__item__sub"><a target="_blank" href="https://join.slack.com/t/statechannels/shared_invite/zt-10zhted6q-GePDJU9vKXpSiLhFtc0S0w" class = "mobile-menu__item__sub">slack.</a></li>
+                    <li class = "mobile-menu__item__sub"><a target="_blank" href="https://statechannels.discourse.group/" class = "mobile-menu__item__sub">forum.</a></li>
+                <li class = "mobile-menu__item__sub"><a target="_blank" href="mailto:research@magmo.com" class = "mobile-menu__item__sub">email.</a></li>
+              </ul>
+
+            </li>
           </ul>
         </div>
       </div>
