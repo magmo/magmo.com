@@ -41,6 +41,7 @@
     "eslint": "^3.10.2",
     "eslint-config-rtablada": "^4.0.0",
     "eslint-plugin-html": "^2.0.0",
+    "prettier": "^2.5.1",
     "rollup-plugin-commonjs": "^7.0.0",
     "rollup-plugin-node-builtins": "^2.0.0",
     "rollup-plugin-node-globals": "^1.1.0",
