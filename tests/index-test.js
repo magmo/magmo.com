@@ -1,5 +1,5 @@
 /* eslint-env qunit */
 
-test('it is working', (assert) => {
+test("it is working", (assert) => {
   assert.ok(true);
 });

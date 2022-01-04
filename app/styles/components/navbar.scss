@@ -1,6 +1,6 @@
 .section--nav {
   padding: 1rem;
-  z-index:100;
+  z-index: 100;
 }
 
 .nav {
@@ -59,32 +59,33 @@
   }
 
   &__dropdown__papers {
-    list-style:none;
-    float:right;
+    list-style: none;
+    float: right;
 
     &__list {
-      padding-top:8px;
-      margin:0;
-      padding-bottom:8px;
-      position:absolute;
-      text-align:left;
-      list-style:none;
-      display:flex;
+      padding-top: 8px;
+      margin: 0;
+      padding-bottom: 8px;
+      position: absolute;
+      text-align: left;
+      list-style: none;
+      display: flex;
       flex-direction: column;
-      padding-left:1.5rem;
+      padding-left: 1.5rem;
       background-color: white;
     }
 
     &__list {
-      display:none;
+      display: none;
     }
 
-    &:hover &__list, &__list:hover{
-      display:block;
+    &:hover &__list,
+    &__list:hover {
+      display: block;
     }
 
     &__item {
-      position:relative;
+      position: relative;
       line-height: 30px;
       font-size: 1.125rem;
       color: $c-black;
@@ -108,39 +109,39 @@
           width: 65%;
           height: 1px;
           background-color: $c-blue;
-          content: '';
+          content: "";
         }
       }
     }
   }
 
   &__dropdown {
-    list-style:none;
+    list-style: none;
 
     &__list {
-      padding-top:8px;
-      margin:0;
-      padding-bottom:8px;
-      position:absolute;
-      text-align:right;
-      list-style:none;
-      display:flex;
+      padding-top: 8px;
+      margin: 0;
+      padding-bottom: 8px;
+      position: absolute;
+      text-align: right;
+      list-style: none;
+      display: flex;
       flex-direction: column;
-      padding-left:2.1875rem;
+      padding-left: 2.1875rem;
       background-color: white;
-
     }
 
     &__list {
-      display:none;
+      display: none;
     }
 
-    &:hover &__list, &__list:hover{
-      display:block;
+    &:hover &__list,
+    &__list:hover {
+      display: block;
     }
 
     &__item {
-      position:relative;
+      position: relative;
       line-height: 30px;
       font-size: 1.125rem;
       color: $c-black;
@@ -164,7 +165,7 @@
           width: 65%;
           height: 1px;
           background-color: $c-blue;
-          content: '';
+          content: "";
         }
       }
     }
