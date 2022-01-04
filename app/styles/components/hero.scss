@@ -27,20 +27,20 @@
 
 .hero__body {
   @include f-base;
-  margin:2rem;
+  margin: 2rem;
   font-weight: 400;
   line-height: 1.6;
   color: $c-darkgrey;
 
-&__middle {
-  text-align: center;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-}
+  &__middle {
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
 
-  ul{
+  ul {
     /* unordered list of items within a hero__body*/
     list-style: none;
   }
@@ -48,11 +48,10 @@
 
 .hero__body__list {
   @include f-base;
-  margin:1rem;
+  margin: 1rem;
   font-weight: 400;
   line-height: 1;
   padding-left: 4rem;
-
 }
 
 .hero__cta {
@@ -61,7 +60,6 @@
     color: $c-blue-link;
   }
 }
-
 
 @media screen and (max-width: $screen-md) {
   .hero {
@@ -73,13 +71,11 @@
   }
 }
 
-
 @media screen and (max-width: $screen-tablet) {
   .hero {
     padding-top: 0;
   }
 }
-
 
 @media screen and (max-width: $screen-mobile) {
   .hero {
@@ -88,16 +84,13 @@
 
   .hero__body {
     margin: 1.5rem;
-  
+
     &__middle {
       margin: 1.5rem;
     }
-
   }
 
   .hero__body__list {
     padding-left: 2.5rem;
-  
   }
 }
-
