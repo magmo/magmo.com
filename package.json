@@ -10,7 +10,9 @@
     "lint:sass": "sass-lint",
     "lint:js": "eslint src && eslint tests",
     "lint:js-fix": "eslint src --fix && eslint tests --fix",
-    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist counterfactual.byjohnmichael.com"
+    "deploy": "ember build -e production && cp dist/index.html dist/200.html && surge dist counterfactual.byjohnmichael.com",
+    "prettier:write": "yarn prettier --write .",
+    "prettier:check": "yarn prettier --check ."
   },
   "author": "",
   "license": "ISC",
