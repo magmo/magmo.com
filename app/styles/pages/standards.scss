@@ -3,7 +3,7 @@
     @include f-heading;
     margin-bottom: 0.25rem;
     font-weight: normal;
-    color: $c-blue;
+    color: $c-orange;
   }
 
   .date {
@@ -11,7 +11,7 @@
     color: $c-black;
 
     span {
-      color: $c-blue;
+      color: $c-orange;
     }
   }
 
@@ -19,10 +19,11 @@
     @include f-base;
     margin: 2rem;
     line-height: 1.45;
-    font-size: 1.25rem;
+    font-size:1.25rem;
     font-weight: 400;
     color: #707070;
   }
+
 }
 
 .signed {

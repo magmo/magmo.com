@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Chivo", sans-serif;
+  font-family: 'Chivo', sans-serif;
   font-size: $f-rem;
   color: $c-black;
   background: $c-white;
@@ -35,7 +35,7 @@ img {
 }
 
 a {
-  color: $c-blue;
+  color: $c-orange;
   text-decoration: none;
   cursor: pointer;
   transition: color $transition-speed;

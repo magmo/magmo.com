@@ -39,7 +39,7 @@
 
       > a {
         position: relative;
-        color: $c-blue;
+        color: $c-orange;
 
         &::before {
           position: absolute;
@@ -48,10 +48,10 @@
           bottom: 0;
           width: 100%;
           height: 1px;
-          background-color: $c-blue;
+          background-color: $c-orange;
           opacity: 0;
           transition: opacity $transition-speed;
-          content: "";
+          content: '';
         }
 
         &:hover::before {
@@ -73,6 +73,7 @@
   }
 }
 
+
 @media screen and (max-width: $screen-md) {
   .section--footer {
     padding: 2rem;
@@ -91,7 +92,7 @@
         margin-top: 1rem;
         margin-left: 0;
         text-align: center;
-        padding-left: 1rem;
+        padding-left:1rem;
       }
     }
 
@@ -110,6 +111,7 @@
   .footer-abstract--left {
     display: none;
   }
+
 }
 
 @media screen and (max-width: $screen-xs) {
@@ -147,4 +149,5 @@
   .footer-abstract--left {
     display: none;
   }
+
 }
