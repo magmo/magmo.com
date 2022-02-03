@@ -3,7 +3,8 @@
   flex-direction: column;
   min-height: 100vh;
 
-  &__content { // enables sticky footer
+  &__content {
+    // enables sticky footer
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -33,8 +34,8 @@
 }
 
 .app__logos {
-  max-height:2rem;
-  margin:0;
+  max-height: 2rem;
+  margin: 0;
   /*
   background: url('https://web3torrent.statechannels.org/assets/logo.svg') no-repeat;
   background-size: contain;
@@ -57,8 +58,6 @@
     padding: 3rem;
   }
 }
-
-
 
 // Inner Container
 .list-content {
@@ -109,6 +108,6 @@
     }
   }
   .app__logos {
-    max-height:1.5rem;
-}
+    max-height: 1.5rem;
+  }
 }
