@@ -37,12 +37,12 @@
       transition: color $transition-speed;
 
       &:hover {
-        color: $c-blue;
+        color: $c-orange;
       }
 
       &.active {
         position: relative;
-        color: $c-blue;
+        color: $c-orange;
 
         &::before {
           position: absolute;
@@ -51,7 +51,7 @@
           bottom: -0.5rem;
           width: 65%;
           height: 1px;
-          background-color: $c-blue;
+          background-color: $c-orange;
           content: "";
         }
       }
@@ -93,13 +93,13 @@
       transition: color $transition-speed;
 
       &:hover {
-        color: $c-blue;
+        color: $c-orange;
         display: block;
       }
 
       &.active {
         position: relative;
-        color: $c-blue;
+        color: $c-orange;
 
         &::before {
           position: absolute;
@@ -108,7 +108,7 @@
           bottom: -0.5rem;
           width: 65%;
           height: 1px;
-          background-color: $c-blue;
+          background-color: $c-orange;
           content: "";
         }
       }
@@ -149,13 +149,13 @@
       transition: color $transition-speed;
 
       &:hover {
-        color: $c-blue;
+        color: $c-orange;
         display: block;
       }
 
       &.active {
         position: relative;
-        color: $c-blue;
+        color: $c-orange;
 
         &::before {
           position: absolute;
@@ -164,7 +164,7 @@
           bottom: -0.5rem;
           width: 65%;
           height: 1px;
-          background-color: $c-blue;
+          background-color: $c-orange;
           content: "";
         }
       }

@@ -11,14 +11,14 @@
   cursor: pointer;
 
   &--stroke {
-    border: 1px solid $c-blue;
+    border: 1px solid $c-orange;
     color: $c-white;
-    background: $c-blue;
+    background: $c-orange;
     transition: color $transition-speed, background-color $transition-speed;
 
     &:hover {
       background: $c-white;
-      color: $c-blue;
+      color: $c-orange;
     }
   }
 
@@ -28,13 +28,13 @@
     transition: background-color $transition-speed;
 
     &:hover {
-      background: $c-blue;
+      background: $c-orange;
     }
   }
 
   &--solid {
-    border: 1px solid $c-blue;
-    background: $c-blue;
+    border: 1px solid $c-orange;
+    background: $c-orange;
     color: $c-white;
   }
 
