@@ -6,7 +6,7 @@
   @include f-heading;
   margin-bottom: 2.25rem;
   font-weight: normal;
-  color: $c-blue;
+  color: $c-orange;
 }
 
 .hero__subheading {
@@ -27,7 +27,7 @@
 
 .hero__body {
   @include f-base;
-  margin:2rem;
+  margin: 2rem;
   font-weight: 400;
   line-height: 1.6;
   color: $c-darkgrey;
@@ -39,42 +39,27 @@
     margin-right: auto;
     justify-content: center;
   }
+
+  ul {
+    /* unordered list of items within a hero__body*/
+    list-style: none;
+  }
 }
 
 .hero__body__list {
   @include f-base;
-  margin:1rem;
+  margin: 1rem;
   font-weight: 400;
   line-height: 1;
   padding-left: 4rem;
-  color: $c-darkgrey;
-}
-.hero__body__unordered__list {
-  @include f-base;
-  margin:1rem;
-  font-weight: 400;
-  line-height: 1;
-  padding-left: 4rem;
-  color: $c-darkgrey;
-  list-style-type: disc;
-  list-style-position: inside;
-}
-.hero__body__list__header {
-  @include f-base;
-  margin:1rem;
-  font-weight: 400;
-  line-height: 1;
-  padding-left: 0.5rem;
-  color: $c-darkgrey;
 }
 
 .hero__cta {
-  color: $c-blue;
+  color: $c-orange;
   &:hover {
-    color: $c-blue-link;
+    color: $c-orange-link;
   }
 }
-
 
 @media screen and (max-width: $screen-md) {
   .hero {
@@ -86,13 +71,11 @@
   }
 }
 
-
 @media screen and (max-width: $screen-tablet) {
   .hero {
     padding-top: 0;
   }
 }
-
 
 @media screen and (max-width: $screen-mobile) {
   .hero {
@@ -101,16 +84,13 @@
 
   .hero__body {
     margin: 1.5rem;
-  
+
     &__middle {
       margin: 1.5rem;
     }
-
   }
 
   .hero__body__list {
     padding-left: 2.5rem;
-  
   }
 }
-
