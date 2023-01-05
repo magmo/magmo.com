@@ -18,4 +18,6 @@ and visit http://localhost:4200 (as per [ember documentation](https://cli.emberj
 
 When you are ready, raise a Pull Request into the `master` branch. A deploy preview will be generated automatically by the netlify bot.
 
-magmo.com is currently registered with cloudfare, and hosted on netlify. Pushing to the master branch will result in a fresh deployment of that version.
+magmo.com is currently registered with cloudfare, and hosted on netlify. Pushing to the master branch will result in
+
+Site is deployed to https://magmo.com
